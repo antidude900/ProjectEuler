@@ -23,46 +23,44 @@ num = '''08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 
 
 
-lst =  np.zeros((20,20))
-adj = 4
-index = 0
+lst =  np.zeros((20,20))	#making a array/list of 20*20 grid	
+index = 0			#for iterating through the um string
 
-for i in range(20):
+for i in range(20):		#adding the numbers to the 20*20 grid
 	for j in range(20):
 
 		lst[i][j] = num[index]
 		index += 1
 
-print(lst)
-
-g = 0
+adj = 4 #have to look all 4 adjacent values
+g = 0	#denotes greaters value
 
 for i in range(20):
 	for j in range(20):
-		row_true = (i+adj < 20)
-		col_true = (j+adj < 20)
+		row_true = (i+adj <= 20)	#checking if going 4 steps from the curret i(row) will be within the 20*20 grid
+		col_true = (j+adj <= 20)	#checking if going 4 steps from the curret j(col) will be within the 20*20 grid
+
+		p = 1	#resetting product as 1 
+		if (row_true): #if within the grid (for row), 
+			for k in range(i,adj):	#then can iterate through all the 4 adjacent number within the current row
+				p *= lst[i+k][j]#if product of the 4 adjacent,
+				g = max(g,p)	#is greater than all the previous products, then change the greates value
 
 		p = 1
-		if (row_true): 
-			for k in range(i,adj):
-				p *= lst[i+k][j]
-				g = max(g,p)
-
-		p = 1
-		if (col_true):
-			for k in range(j,adj):
+		if (col_true):	#if within the grid (for column),
+			for k in range(j,adj):	#then can iterate through all the 4 adjacent number within the current column
 				p *= lst[i][j+k]
-				g = max(g,p)
+				g = max(g,p)	
 
 		p = 1
-		if (row_true and col_true):
-			for k in range(0, adj):
+		if (row_true and col_true):	#if within the grid(for diagonal forward),
+			for k in range(0, adj):	#then can iterate through all the 4 adjacent number within the current column
 				p *= lst[i+k][j+k]
 				g = max(g,p)
 
 		p = 1
-		if (i>=4 and col_true):
-			for k in range(0, adj):
+		if (i>=4 and col_true):	#if within the grid(for diagonal backward),
+			for k in range(0, adj):	#then can iterate through all the 4 adjacent number within the current column
 				p *= lst[i-k][j+k]
 				g = max(g,p)
 
