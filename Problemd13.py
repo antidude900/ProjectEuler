@@ -102,10 +102,10 @@ strng = """37107287533902102798797998220837590246510135740250
 n = 50
 l = len(strng)
 
-num = [strng[i:i+n] for i in range(0,l, n)]
+num = [strng[i:i+n] for i in range(0,l, n)]#splitting the string to 50 digit numbers
 sum = 0
 
-for i in range(100):
+for i in range(len(num)):#adding all the numbers(in total 100 numbers)
 	sum+= int(num[i])
 
-print(str(sum)[:10])
+print(str(sum)[:10])#printing only the first 10 digits 
