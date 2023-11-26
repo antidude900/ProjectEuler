@@ -1,3 +1,4 @@
+#too long tp explain so msg me, I will explain orally
 singles = ["","one","two","three","four","five","six","seven","eight","nine",]
 doubles = ["","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"]
 one_doubles = ["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
