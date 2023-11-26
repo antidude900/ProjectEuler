@@ -1,3 +1,4 @@
+#see https://youtu.be/d5YVMRRhIWE?si=2mqKPMJ91JVolG-h
 traingle = """75
 95 64
 17 47 82
