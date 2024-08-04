@@ -30,10 +30,6 @@ def largest_prime_fac(n):
     return fac
         
         
-if __name__ == '__main__':
-    t = int(input().strip())
-
-    for t_itr in range(t):
-        n = int(input().strip())
-        print(largest_prime_fac(n))
+n= int((input("Enter n:")))
+print(largest_prime_fac(n))
 
