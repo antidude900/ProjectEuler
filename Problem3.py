@@ -11,7 +11,7 @@ def largest_prime_fac(n):
     fac=-1
     for i in range(2,int(math.sqrt(n))+1): #if there is no factors below root under n, then n itself is prime
 
-        while(n%i == 0)""" removing all the same prime factors to avoid prime factors from clumping together and making a composite factor
+        while(n%i == 0):"""removing all the same prime factors to avoid prime factors from clumping together and making a composite factor
 			for eg: if given number 16; if we will have:2*8 and will get largest prime factor as 8 which is wrong
       			but if we do like: 2*2*2*2 and remove all the 2 after we found 2 as prime factor,
 	    		then the largest prime factor is 2 which is right
