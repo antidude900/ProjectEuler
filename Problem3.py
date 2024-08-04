@@ -1,13 +1,39 @@
-#alogrithm to find prime factors
-num,factor = 600851475143,2;	# starting with number 2 to check all prime factors of num
+#!/bin/python3
 
-while (factor<=num):	#we will have factors until the number we divide with exceeds the number itself
-	if (num%factor == 0):	#while if it is a factor
-		num /=factor	#factor decrease the num by factor so the num goes on shrinking until the numb is not divisible by the factor
+import math
+import time
 
+"""
+any number can be written as product of prime i.e its factors can be simply written in only prime factors.
+hence prime factors are the building blocks and they are the one who can group up to make a composite factor as well
+"""
+def largest_prime_fac(n):
+    fac=-1
+    for i in range(2,int(math.sqrt(n))+1): #if there is no factors below root under n, then n itself is prime
 
-	factor+=1	#if not a factor go to another number for checking
-#the factor we get at the end is the highest prime factor
+        while(n%i == 0)""" removing all the same prime factors to avoid prime factors from clumping together and making a composite factor
+			for eg: if given number 16; if we will have:2*8 and will get largest prime factor as 8 which is wrong
+      			but if we do like: 2*2*2*2 and remove all the 2 after we found 2 as prime factor,
+	    		then the largest prime factor is 2 which is right
+			"""
+            fac=i 	
+            n//=i
+            
+            
+    if (n > 1):"""suppose for 10 we do root under we get 3 so first loop with 2 is allowed as 2>3 add thus 2 is taken as prime 
+    		and we do 10/2 getting 5 whose root is 2 but as 3 is greater than 2, the loop will break. now we come to this if condition
+      		and as 5 is greater than 1 we get 5. so the meaning of this if condition is that, if after factorizing still its not fully
+		factorized then the remaining number is the last factor left
+  		"""
+        fac=n
+        
+    return fac
+        
+        
+if __name__ == '__main__':
+    t = int(input().strip())
 
-factor -= 1 #as we add 1 at the end of loop above no matter what, it gets added to the final result we require too. So removing that 1
-print(factor)
+    for t_itr in range(t):
+        n = int(input().strip())
+        print(largest_prime_fac(n))
+
