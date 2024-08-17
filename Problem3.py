@@ -1,7 +1,7 @@
-#!/bin/python3
-
-import math
-import time
+"""
+What is the largest prime factor of a given number n?
+https://www.hackerrank.com/contests/projecteuler/challenges/euler003/problem?isFullScreen=true
+"""
 
 """
 any number can be written as product of prime i.e its factors can be simply written in only prime factors.
