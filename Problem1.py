@@ -1,3 +1,8 @@
+"""
+Find the sum of all the multiples of 3 or 5  below  n.
+https://www.hackerrank.com/contests/projecteuler/challenges/euler001/problem?isFullScreen=true
+"""
+
 def general_sum(n,k):
     p = n//k """finding how many multiples of k is there upto n numbers. so did n/k
               for eg:upto 40 numbers, finding how many multiple of 15, then 40/15 gives 2.66
