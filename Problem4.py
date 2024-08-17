@@ -1,5 +1,6 @@
 """
 Find the largest palindrome made from the product of two 3-digit numbers which is less than n.
+https://www.hackerrank.com/contests/projecteuler/challenges/euler004/problem?isFullScreen=true
 """
 
 
@@ -20,4 +21,7 @@ def largest_pal(n):
 											#and thus n is the largest palidrome(largest as we are searching from top)
                     break
     return palindrome
+
+n = int(input("Enter n:))
+print(largest_prime_fac(n))
     
