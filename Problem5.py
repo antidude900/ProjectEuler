@@ -50,5 +50,4 @@ while(n1!=n2):
 gcd = n1
 
 Note: the second one is abit faster than first one
-
 '''
