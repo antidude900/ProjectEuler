@@ -18,8 +18,9 @@ def greatest_product(num,size,adj):
    	we used g_p as 0 so that any product that will come at beginning with be the greatest product"""
 	
     
-        for j in range(i,i + adj): #looping from a element to 12 more from it(1 +12=13)
-            p *= int(num[j]) #multiply all the 13 adjacent elements
+        for j in range(i,i + adj): #looping from a element to (adj-1) more from it
+				   #(one less than adj because including the starting number, it will be upto no of adj )
+            p *= int(num[j]) #multiply all the adjacent elements
             
         
             if (p > g_p and j==i+adj-1): 
