@@ -1,4 +1,5 @@
 def product_of_four(lst): #for carrying out product part of the adjacent numbers
+	
     max_product = 0
     for i in range(len(lst) - 3):
         product = lst[i] * lst[i + 1] * lst[i + 2] * lst[i + 3]
@@ -9,8 +10,7 @@ def product_of_four(lst): #for carrying out product part of the adjacent numbers
 
     
 def greatest_product(grid):
-
-
+	
     max_product = 0
     n = len(grid)
     
