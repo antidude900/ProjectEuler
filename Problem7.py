@@ -11,7 +11,7 @@ In the video, 0 is used to mark as prime and 1 is used to mark as not prime in a
 so let us use True to denote that it is prime and False to say it is not prime
 
 Also sieve will not be good for the 3rd question i.e to find the largest prime factor(or list of prime factors) of a number
-as we only need to deal with the factors of that number but using sieve we are finding primes regardess it is a factor of the number or not
+as we only need to deal with the factors of that number but using sieve we are finding primes regardess it is a factor of the number or not making it slow
 """
 
 import math
