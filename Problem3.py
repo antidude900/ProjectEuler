@@ -9,7 +9,7 @@ hence prime factors are the building blocks and they are the one who can group u
 '''
 
 def largest_prime_fac(n):
-    fac=-1
+    fac=-1 
     for i in range(2,int(math.sqrt(n))+1): #if there is no factors below root under n, then n itself is prime
 
         while(n%i == 0):'''removing all the same prime factors to avoid prime factors from clumping together and making a composite factor
@@ -17,7 +17,7 @@ def largest_prime_fac(n):
       			but if we do like: 2*2*2*2 and remove all the 2 after we found 2 as prime factor,
 	    		then the largest prime factor is 2 which is right
 			'''
-            fac=i 	
+            fac=i #if had asked list of prime factors, then would have printed all the i here
             n//=i
             
             
