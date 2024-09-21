@@ -1,15 +1,17 @@
 """
-
-Leave for now
-
+What is the Nth prime number?
+https://www.hackerrank.com/contests/projecteuler/challenges/euler007/problem
 """
 
 """
-See this video first to undersand sieve first: https://www.youtube.com/watch?v=nDPo9hsDNvU&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ
+See this video first to understand sieve: https://www.youtube.com/watch?v=nDPo9hsDNvU&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ
 
 In the video, 0 is used to mark as prime and 1 is used to mark as not prime in a prime array which is so confusing.
 (should have been 1 for prime and 0 for not prime)
 so let us use True to denote that it is prime and False to say it is not prime
+
+Also sieve will not be good for the 3rd question i.e to find the largest prime factor(or list of prime factors) of a number
+as we only need to deal with the factors of that number but using sieve we are finding primes regardess it is a factor of the number or not
 """
 
 import math
