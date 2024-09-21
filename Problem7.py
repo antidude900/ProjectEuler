@@ -21,7 +21,7 @@ def estimate_limit(n):
     
 def prime_sieve(n):
     limit = estimate_limit(n)  
-    prime = [True] * (limit + 1) 
+    prime = [True] * (limit + 1) #as index starts from 0, we increase limit size by 1 (otherwise the index will be from 0 to limit-1 thus excluding limit)
     count = 0  
 
     # Sieve of Eratosthenes
