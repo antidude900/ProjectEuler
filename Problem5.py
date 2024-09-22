@@ -1,6 +1,6 @@
 """
 What is the smallest positive number that is evenly divisible(divisible with no remainder) by all of the numbers from  1 to n?
-https://www.hackerrank.com/contests/projecteuler/challenges/euler005/problem?isFullScreen=true
+https://www.hackerrank.com/contests/projecteuler/challenges/euler005/problem
 """
 
 '''
