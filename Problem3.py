@@ -1,6 +1,6 @@
 """
 What is the largest prime factor of a given number n?
-https://www.hackerrank.com/contests/projecteuler/challenges/euler003/problem?isFullScreen=true
+https://www.hackerrank.com/contests/projecteuler/challenges/euler003/problem
 """
 
 '''
