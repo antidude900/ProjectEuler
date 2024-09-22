@@ -22,6 +22,10 @@ def largest_pal(n):
                     break
     return palindrome
 
-n = int(input("Enter n:))
-print(largest_prime_fac(n))
+if __name__ == '__main__':
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        n = int(input().strip())
+        print(largest_pal(n))
     
