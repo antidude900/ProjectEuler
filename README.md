@@ -31,10 +31,17 @@ HackerRank offers multiple test cases for each problem, allowing you to identify
 ![image](https://github.com/user-attachments/assets/2c832c77-7410-49b1-b6a9-29dba6834632)
 
 The Left Side of the Environment provides the details related to the problem. For eg: Problem Statement, Input Format, Constraints, Output Format.
-
 The Right Side of the Environment provides the coding editor to code and submit the code.
 
 ### Input Format
+
+![image](https://github.com/user-attachments/assets/14015c22-d93b-4a39-9acd-24a9c45fbd99)
+
+The First Line contains the no of test cases say "N".
+After that, there are "N" Lines each containing the input for each test case.
+For eg: In the figure above, the first line contains 2 meaning there are 2 test cases. After that, the second line has "10" which means the input of the first test case is 10 and the second line has "100" which means the input of the second test case is 100.
+
+### Reading the Input
 
 
 
