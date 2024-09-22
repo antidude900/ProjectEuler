@@ -39,7 +39,7 @@ def sum_multiple(n):
                                                           and we are left with only one mutliple i.e 30'''
     return multiple_3_or_5
     
-
+#Read the ReadMe's HackeRank Input Format to understand the below code
 if __name__ == '__main__':
     t = int(input().strip())
 
