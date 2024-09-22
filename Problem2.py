@@ -1,6 +1,6 @@
 """
 By considering the terms in the Fibonacci sequence whose values do not exceed , find the sum of the even-valued terms.
-https://www.hackerrank.com/contests/projecteuler/challenges/euler002/problem?isFullScreen=true
+https://www.hackerrank.com/contests/projecteuler/challenges/euler002/problem
 """
 
 def fibo_sum(n):
