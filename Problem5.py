@@ -24,8 +24,12 @@ def divisible_by_all(n):
     
     return LCM
 
-n = int(input("Enter n:"))
-print(divisible_by_all(n))
+if __name__ == '__main__':
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        n = int(input().strip())
+        print(divisible_by_all(n))
 
 '''
 If want to make your own, gcd function then do this way:
