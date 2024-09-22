@@ -1,6 +1,6 @@
 """
 Find the sum of all the multiples of 3 or 5  below  n.
-https://www.hackerrank.com/contests/projecteuler/challenges/euler001/problem?isFullScreen=true
+https://www.hackerrank.com/contests/projecteuler/challenges/euler001/problem
 """
 
 def general_sum(n,k):
