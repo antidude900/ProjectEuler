@@ -9,8 +9,9 @@ Welcome to my collection of solutions for [Project Euler](https://projecteuler.n
 - [Structure](#structure)
 - [Project Euler](#project-euler)
 - [HackerRank](#hackerrank)
-- [Input Format](#input-format)
-- [Reading the Input](#reading-the-input)
+  - [Environment Overview](#hackerrank-environment-overview)
+  - [Input Format](#input-format)
+  - [Reading the Input](#reading-the-input)
 - [Acknowledgments](#acknowledgments)
 
 
@@ -47,7 +48,7 @@ HackerRank provides multiple test cases for each problem, allowing you to identi
 - **Right Panel**: The coding editor, where you can write and submit your solution.
 
 
-## Input Format
+### Input Format
 
 ![Input Format](https://github.com/user-attachments/assets/14015c22-d93b-4a39-9acd-24a9c45fbd99)
 
@@ -62,7 +63,7 @@ For example, in the image above:
 - The third line contains `100`, which is the input for the second test case.
 
 
-## Reading the Input
+### Reading the Input
 
 ![Reading the Input](https://github.com/user-attachments/assets/eb0dcf13-e12d-44be-adc9-bbba45555504)
 
