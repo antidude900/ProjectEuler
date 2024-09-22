@@ -29,5 +29,17 @@ def greatest_product(num,size,adj):
 
     return g_p
 	
-num,n,k=int(input("Enter the number, its size and the lenght of consecutive numbers for product"))
-print(greatest_product(num,n,k))
+if __name__ == '__main__':
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        first_multiple_input = input().rstrip().split()
+
+        n = int(first_multiple_input[0])
+
+        k = int(first_multiple_input[1])
+
+        num = input()
+        
+        print(greatest_product(num,n,k))
+        
