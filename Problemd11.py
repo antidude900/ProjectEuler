@@ -1,3 +1,7 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler011/problem
+"""
+
 def product_of_four(lst): #for carrying out product part of the adjacent numbers
 	
     max_product = 0
@@ -33,15 +37,28 @@ def greatest_product(grid):
             max_product = max(max_product, product_of_four(diag1))
 
             # Bottom-left to top-right
-            diag2 = [grid[i + 3 - k][j + k] for k in range(4)] #here the point i won't be the starting point of the diagonal but the starting point of the square which extends horizontally towards right and vertically downwards making a 4*4 square. Then we take the diagonal of the square from bottom left to top-right
+            diag2 = [grid[i + 3 - k][j + k] for k in range(4)] #here the point i won't be the starting point of the diagonal but the starting point of the square 
+							       #which extends horizontally towards right and vertically downwards making a 4*4 square. 
+							       #Then we take the diagonal of the square from bottom left to top-right
             max_product = max(max_product, product_of_four(diag2))
 
     return max_product
-    
-num=input("Enter the string of 400 numbers:")
+
+
+if __name__ == '__main__':
+    grid = []
+
+    for _ in range(20):
+        grid.append(list(map(int, input().rstrip().split())))
+    print(greatest_product(grid))
+
+"""
+if given the string of numbers in a single input:
+num=input().strip()
 num = list(map(int, num))
 
 size = 20
 grid = [num[i * size:(i + 1) * size] for i in range(size)]
 	#slicing num from starting point i*size to (i+1)*size thus making a sublist of length "size"
 print(greatest_product(grid))
+"""
