@@ -17,5 +17,10 @@ def fibo_sum(n):
     
     return sum
 
-n = int(input("Enter n:"))
-print(fibo_sum(n))
+
+if __name__ == '__main__':
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        n = int(input().strip())
+        print(fibo_sum(n))
