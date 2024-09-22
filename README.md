@@ -26,7 +26,15 @@ HackerRank offers multiple test cases for each problem, allowing you to identify
 
 ![image](https://github.com/user-attachments/assets/88f68ad8-1589-427f-8589-b8af6f4e9af4)
 
-### About its environment
+### About Its Environment
+
+![image](https://github.com/user-attachments/assets/2c832c77-7410-49b1-b6a9-29dba6834632)
+
+The Left Side of the Environment provides the details related to the problem. For eg: Problem Statement, Input Format, Constraints, Output Format.
+
+The Right Side of the Environment provides the coding editor to code and submit the code.
+
+### Input Format
 
 
 
