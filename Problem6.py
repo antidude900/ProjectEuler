@@ -13,5 +13,9 @@ def abs_diff(n):
     square_sum = square_sum*square_sum;
     return square_sum - sum_square
 
-n = int(input("Enter n:"))
-print(abs_diff(n))
+if __name__ == '__main__':
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        n = int(input().strip())
+        print(abs_diff(n))
