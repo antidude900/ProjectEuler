@@ -79,7 +79,7 @@ Within the loop:
 - Each test case value is read, stripped, and stored in `n`.
 - The function is called with `n`, returning the solution, which is printed.
 
-(Note: You can customize how input is handled. For example, Problem 10 offers a different input format.)
+(Note: You can customize how input is handled. For example, In Problem 10 we handle input in a different format for maximizing efficiency.)
 
 
 ## Acknowledgments
