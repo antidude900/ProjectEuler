@@ -26,7 +26,7 @@ HackerRank offers multiple test cases for each problem, allowing you to identify
 
 ![image](https://github.com/user-attachments/assets/88f68ad8-1589-427f-8589-b8af6f4e9af4)
 
-#About its environment
+### About its environment
 
 
 
