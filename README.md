@@ -2,68 +2,59 @@
 
 Welcome to my collection of solutions for [Project Euler](https://projecteuler.net/) problems, implemented in Python.
 
-
 ## About
 
-This repository contains Python solutions to various problems from Project Euler. Each solution is crafted to be efficient and pass all the test cases in HackerRank.
-
+This repository contains Python solutions to various Project Euler problems. Each solution is crafted for efficiency and passes all the test cases provided by [HackerRank](https://www.hackerrank.com/).
 
 ## Structure
 
-Each solution is saved as a separate Python file, named according to the problem number (e.g., `Problem1.py` for problem 1). The code is well explained with comments providing mathematical theory, thought process and examples.
-
+Each solution is saved as a separate Python file, named according to the problem number (e.g., `Problem1.py` for Problem 1). The code is well-commented, explaining the mathematical theory, thought process, and example inputs.
 
 ## Project Euler
 
-Project Euler is a series of challenging mathematical and computational problems that require creative and optimized solutions. The problems can range from simple arithmetic to complex mathematical theory. 
+Project Euler is a series of challenging mathematical and computational problems that require creative, optimized solutions. The problems range from simple arithmetic to complex mathematical theories.
 
-![image](https://github.com/user-attachments/assets/14ae4943-445e-4e90-b650-99253c35fa70)
-
+![Project Euler](https://github.com/user-attachments/assets/14ae4943-445e-4e90-b650-99253c35fa70)
 
 ## HackerRank
 
-HackerRank offers multiple test cases for each problem, allowing you to identify flaws in your code and optimize it for better performance.
+HackerRank provides multiple test cases for each problem, allowing you to identify flaws in your code and optimize performance.
 
-![image](https://github.com/user-attachments/assets/88f68ad8-1589-427f-8589-b8af6f4e9af4)
+![HackerRank](https://github.com/user-attachments/assets/88f68ad8-1589-427f-8589-b8af6f4e9af4)
 
-### About Its Environment
+### HackerRank Environment Overview
 
-![image](https://github.com/user-attachments/assets/2c832c77-7410-49b1-b6a9-29dba6834632)
+![HackerRank Environment](https://github.com/user-attachments/assets/2c832c77-7410-49b1-b6a9-29dba6834632)
 
-The Left Side of the Environment provides the details related to the problem. For eg: Problem Statement, Input Format, Constraints, Output Format.
-The Right Side of the Environment provides the coding editor to code and submit the code.
+- **Left Panel**: Displays the problem statement, input format, constraints, and output format.
+- **Right Panel**: The coding editor, where you can write and submit your solution.
 
-### Input Format
+### Input Format Example
 
-![image](https://github.com/user-attachments/assets/14015c22-d93b-4a39-9acd-24a9c45fbd99)
+![Input Format](https://github.com/user-attachments/assets/14015c22-d93b-4a39-9acd-24a9c45fbd99)
 
-The First Line contains the no of test cases say "N".
-After that, there are "N" Lines each containing the input for each test case.
-For eg: In the figure above, the first line contains 2 meaning there are 2 test cases. After that, the second line has "10" which means the input of the first test case is 10 and the second line has "100" which means the input of the second test case is 100.
+- The first line contains the number of test cases, denoted as `N`.
+- Each of the next `N` lines contains input for a test case.
+
+For example, in the image above:
+- The first line (`2`) indicates that there are two test cases.
+- The second line contains `10`, which is the input for the first test case.
+- The third line contains `100`, which is the input for the second test case.
 
 ### Reading the Input
 
-![image](https://github.com/user-attachments/assets/eb0dcf13-e12d-44be-adc9-bbba45555504)
+![Reading the Input](https://github.com/user-attachments/assets/eb0dcf13-e12d-44be-adc9-bbba45555504)
 
-The first line is irrelevant(relevant when importing one python file in another python file) in the present context and the code still works if it is removed. 
+- The first line is irrelevant when not importing one Python file into another, and can be ignored.
+- The second line removes leading and trailing whitespaces and stores the number of test cases in the variable `t`.
+- The code then runs a loop `t` times to process each test case.
 
-The second line first removes leading and trailing whitespace from the input to maintain the format of the input and then stores it in in variable "t".
+Within the loop:
+- The value for each test case is read, stripped, and stored in `n`.
+- The function is then called with `n`, returning the solution, which is printed.
 
-Thus "t" contains the no of test cases.
+(Note: You can customize how input is handled. For example, Problem 10 offers a different input format.)
 
-The third line runs a loop of range "t" to read all the test cases.
+## Thank You
 
-The fourth line which is inside the loop reads the value of the test case, strips it and stores in "n".
-
-We can then pass n as argument to the function which then returns the required answer and then we print it.
-
-(Note: This is only the default way how the input is read in the code. You can write your own custom way to read the input which you will be experience the first time in Problem 10)
-
-
-### Thank you
-
-Hope this repository will help you in solving the Project Euler Questions. If it does and you find it helpful, please :star: this repository.
-
-
-
-
+I hope this repository helps you in solving Project Euler problems. If you find it helpful, please ⭐ star this repository!
