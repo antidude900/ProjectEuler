@@ -41,7 +41,7 @@ HackerRank provides multiple test cases for each problem, allowing you to identi
 
 ### HackerRank Environment Overview
 
-![HackerRank Environment](https://github.com/user-attachments/assets/2c832c77-7410-49b1-b6a9-29dba6834632)
+![image](https://github.com/user-attachments/assets/2be3bc90-1009-4aa7-88a3-d122cf21e9c6)
 
 - **Left Panel**: Displays the problem statement, input format, constraints, and output format.
 
