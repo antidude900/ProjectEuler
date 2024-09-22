@@ -45,11 +45,17 @@ For eg: In the figure above, the first line contains 2 meaning there are 2 test 
 ![image](https://github.com/user-attachments/assets/eb0dcf13-e12d-44be-adc9-bbba45555504)
 
 The first line is irrelevant(relevant when importing one python file in another python file) in the present context and the code still works if it is removed. 
+
 The second line first removes leading and trailing whitespace from the input to maintain the format of the input and then stores it in in variable "t".
+
 Thus "t" contains the no of test cases.
+
 The third line runs a loop of range "t" to read all the test cases.
+
 The fourth line which is inside the loop reads the value of the test case, strips it and stores in "n".
+
 We can then pass n as argument to the function which then returns the required answer and then we print it.
+
 (Note: This is only the default way how the input is read in the code. You can write your own custom way to read the input which you will be experience the first time in Problem 10)
 
 
