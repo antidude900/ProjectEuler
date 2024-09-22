@@ -40,6 +40,10 @@ def sum_multiple(n):
     return multiple_3_or_5
     
 
-n= int((input("Enter n:")))
-print(sum_multiple(n-1))  #as said below n, did upto n-1
+if __name__ == '__main__':
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        n = int(input().strip())
+        print(sum_multiple(n-1)) #as said below n
     
