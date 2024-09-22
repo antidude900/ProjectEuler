@@ -42,6 +42,7 @@ After that, there are "N" Lines each containing the input for each test case.
 For eg: In the figure above, the first line contains 2 meaning there are 2 test cases. After that, the second line has "10" which means the input of the first test case is 10 and the second line has "100" which means the input of the second test case is 100.
 
 ### Reading the Input
+
 ![image](https://github.com/user-attachments/assets/eb0dcf13-e12d-44be-adc9-bbba45555504)
 
 The first line is irrelevant(relevant when importing one python file in another python file) in the present context and the code still works if it is removed. 
@@ -58,6 +59,10 @@ We can then pass n as argument to the function which then returns the required a
 
 (Note: This is only the default way how the input is read in the code. You can write your own custom way to read the input which you will be experience the first time in Problem 10)
 
+
+### Thank you
+
+Hope this repository will help you in solving the Project Euler Questions. If it does and you find it helpful, please :star: this repository.
 
 
 
