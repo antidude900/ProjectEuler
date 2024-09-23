@@ -25,7 +25,12 @@ def sieve_of_eratosthenes(max_n):
 
 def main():
     import sys
-    input = sys.stdin.read
+    input = sys.stdin.read 
+    """
+    Suppose the input was like 2 5 10 meaning there are 2 test cases and 5 and 10 are the values of each test case.
+    If we had done input() without importing sys and doing sys.stdin.read it would only have given 2 and then we again have to do input() giving us 5 and again input() for 10
+    But here, as we need all the test cases at the same time, we do "input = sys.stdin.read" and now using input() we get 2 5 10 at the same time (with line break between them)
+    """
     data = input().split()
     
     t = int(data[0])  
