@@ -3,6 +3,10 @@ Find the sum of all the primes not greater than given N.
 https://www.hackerrank.com/contests/projecteuler/challenges/euler010/problem
 """
 
+"""
+This solution doesn't solve the problem of repeititive process for every single test cases. For that, see the v2 version
+"""
+
 
 def prime_sieve(n):
     if n<2:
