@@ -5,6 +5,8 @@ https://www.hackerrank.com/contests/projecteuler/challenges/euler010/problem
 
 """
 This solution doesn't solve the problem of repeititive process for every single test cases. For that, see the v2 version
+
+As this is the same algorithm problem 7 uses, try understanding by yourself (>ᴗ•) 
 """
 
 
