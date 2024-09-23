@@ -22,7 +22,7 @@ This repository contains Python solutions to various Project Euler problems. Eac
 
 ## Structure
 
-Each solution is saved as a separate Python file, named according to the problem number (e.g., `Problem1.py` for Problem 1). However when saving two digit numbered problem, it gets grouped up with the single digit problem which has same digit as its first digit. To prevent this, the name is a little modified (e.g., `Problemd12.py` for Problem 12). The code is well-commented, explaining the mathematical theory, thought process, and example inputs. Also some questions have v2 version too (e.g., `Problemd12_v2.py` for Problem 12). Both are the same algorithm and have same speed but the v2 version is made to make the alogirthm optimized for multiple test cases (this problem is discussed more in v2 version of Problem 10). 
+Each solution is saved as a separate Python file, named according to the problem number (e.g., `Problem1.py` for Problem 1). However when saving two digit numbered problem, it gets grouped up with the single digit problem which has same digit as its first digit. To prevent this, the name is a little modified (e.g., `Problemd12.py` for Problem 12). The code is well-commented, explaining the mathematical theory, thought process, and example inputs. Also some questions have v2 version too (e.g., `Problemd12_v2.py` for Problem 12). Both are the same algorithm and have same speed but the v2 version is made to make the alogirthm optimized for multiple test cases (this problem is discussed more in `Problemd10_v2.py`). 
 
 
 ## Project Euler
@@ -79,7 +79,7 @@ Within the loop:
 - Each test case value is read, stripped, and stored in `n`.
 - The function is called with `n`, returning the solution, which is printed.
 
-(Note: You can customize how input is handled. For example, In Problem 10 we handle input in a different format for maximizing efficiency.)
+(Note: You can customize how input is handled. You will come across the need to do so for the first time in Problem 10 for solving the problem of repeititive process for every single test cases.)
 
 
 ## Acknowledgments
