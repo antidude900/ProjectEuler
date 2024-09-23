@@ -1,10 +1,4 @@
 """
-Find the sum of all the primes not greater than given N.
-https://www.hackerrank.com/contests/projecteuler/challenges/euler010/problem
-"""
-
-
-"""
 When doing this question, I got to a big problem. There were 7 test cases in total. Out of 7, 5 of them were solved but 2 of them exceeded time limit. 
 I tried optmizing the code as much as I can but still 6 and 7 never solved. Then seeing the discussion section, I found out the mistake.
 
