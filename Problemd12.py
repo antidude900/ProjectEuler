@@ -4,10 +4,10 @@ https://www.hackerrank.com/contests/projecteuler/challenges/euler012/problem
 """
 
 """
-This solution doesn't solve the problem of repeititive process for every single test cases
+This solution doesn't solve the problem of repeititive process for every single test cases. For that, see the v2 version
 """
 
-import math
+
 # Function to count the number of divisors
 def count_divisors(n):
 
