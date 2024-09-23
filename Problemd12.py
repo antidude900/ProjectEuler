@@ -1,5 +1,5 @@
 #see https://www.youtube.com/watch?v=9WX8_qluq7I&t=491s upto 2:46 to understand algorithm
-def no_of_factors(num) :
+def no_of_factors(n) :
 
     i = 2;
     p = 1
