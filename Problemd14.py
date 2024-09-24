@@ -1,20 +1,5 @@
 def main():
-    
-    t = int(input())  # Read number of test cases
-    test_cases = [int(input()) for _ in range(t)]  # Read input values
-    
-    
-    max_val = max(test_cases)  # Find the maximum number in the input list
-    
-    
-    steps = [0,0]     #starting from 0 so that each index represents the    respective number 
-                    #and the value in that index shows the terms involved to    reach 1
-    max_val = max(test_cases)  # Find the maximum number in the input list
-    
-    # Initialize a list to store answers, with index representing the number
-    ans = [0] * (max_val + 1)
-    max_state = 0
-    
+
 
     
     for num in range(2,max_val+1):#check for all values under 1 million
@@ -50,6 +35,22 @@ def main():
 
 # Call the main function
 if __name__ == "__main__":
-    main()
+    t = int(input())  # Read number of test cases
+    test_cases = [int(input()) for _ in range(t)]  # Read input values
+    
+    
+    max_val = max(test_cases)  # Find the maximum number in the input list
+    
+    
+    steps = [0,0]     #starting from 0 so that each index represents the    respective number 
+                    #and the value in that index shows the terms involved to    reach 1
+    max_val = max(test_cases)  # Find the maximum number in the input list
+    
+    # Initialize a list to store answers, with index representing the number
+    ans = [0] * (max_val + 1)
+    max_state = 0
+    
+
+    
 
 
