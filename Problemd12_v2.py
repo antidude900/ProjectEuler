@@ -31,14 +31,9 @@ def highly_divisible_triangular(threshold, triangular_numbers, divisors_count):
         n += 1
 
 def main():
-
-   
-    import sys
-    input = sys.stdin.read
-    data = input().split()
     
-    t = int(data[0])  # Number of test cases
-    test_cases = [int(data[i]) for i in range(1, t + 1)]  # Extract all test cases
+    t = int(input())  # Read number of test cases
+    test_cases = [int(input()) for _ in range(t)]  # Read input values
     
     triangular_numbers = []
     divisors_count = []
@@ -48,12 +43,10 @@ def main():
     for threshold in test_cases:
         for i in range(len(divisors_count)):
             if divisors_count[i] > threshold:
-                results.append(str(triangular_numbers[i]))
+                print(triangular_numbers[i])
                 break
         else:
-            results.append(str(highly_divisible_triangular(threshold, triangular_numbers, divisors_count)))
-
-    print("\n".join(results))
+            print(highly_divisible_triangular(threshold, triangular_numbers, divisors_count))
 
 if __name__ == "__main__":
     main()
