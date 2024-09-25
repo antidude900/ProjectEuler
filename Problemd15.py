@@ -15,4 +15,4 @@ t= int(input())
 
 for _ in range(t):
     m, n = map(int, input().split())
-    print(lattice_paths(m,n)%(10**9+7))
+    print(lattice_paths(m,n)%(10**9+7)) #to get answer in modulo 10^9+7
