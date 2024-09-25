@@ -1,3 +1,7 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler014/problem
+"""
+
 def length_of_sequence_nth(num, lengths):
     """Calculate the length of sequence for a given number num."""
     temp = num
@@ -62,9 +66,11 @@ def length_of_sequence_all(max_val):
             max_length = length
             longest_len_nums[num] = num
             max_length_num = num
-        
+
+       
         longest_len_nums[num] = max_length_num
-    
+        
+     #if would have been a single test question, then would have return max_length_num instead of longest_len_nums
     return longest_len_nums
 
 
