@@ -72,8 +72,10 @@ def length_of_sequence_all(max_val):
 if __name__ == "__main__":
     t = int(input())
     test_cases = [int(input()) for _ in range(t)]
+
+    """taking maximum value among all test_cases 
+    so that the longest_len_nums array we create upto that maximum value will also contain the limit value of each test case"""
     
-    # Precompute results up to the maximum test case value
     max_val = max(test_cases)
     longest_len_nums = length_of_sequence_all(max_val)
     
