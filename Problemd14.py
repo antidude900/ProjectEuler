@@ -65,12 +65,12 @@ def length_of_sequence_all(max_val):
         if length >= max_length: 
             max_length = length
             longest_len_nums[num] = num
-            max_length_num = num
+            longest_length_num = num
 
        
-        longest_len_nums[num] = max_length_num
+        longest_len_nums[num] = longest_length_num
         
-     #if would have been a single test question, then would have return max_length_num instead of longest_len_nums
+     #if would have been a single test question, then would have return longest_length_num instead of longest_len_nums
     return longest_len_nums
 
 
