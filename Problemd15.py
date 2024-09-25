@@ -1,20 +1,18 @@
-#combination formula(to understand more go https://www.youtube.com/watch?v=ivYXjESJ_zE)
-from math import factorial
-
-total = factorial(40)//(factorial(20)*factorial(40-20)) 
-print(total)
+import math
 
 
-#but what if not a square grid?
-#then use this algorithm below(https://www.youtube.com/watch?v=ZEYG4tpI4U4)
+def lattice_paths(m,n):
+    """for this can use the combination formula : 
+    C(m + n, m) = (m + n)! / (m! * n!)
+    [Formula of C(N,r) where N is m+n and m is r(Can also take n as r, stil same answer)]
+    Thus if a square grid, then formula will be : (2n)! / ( n!)^2
+    """
 
-#import numpy as np
-#
-#grid = np.full((21,21), 1,dtype=np.int64) #need to make it one size for both rows and column
-#
-#
-#for i in range(1,21):
-#	for j in range(1,21):
-#		grid[i][j] = grid[i-1][j]+grid[i][j-1]
-#
-#print(grid[20][20])
+    return math.factorial(m + n) // (math.factorial(m) * math.factorial(n))
+
+
+t= int(input())
+
+for _ in range(t):
+    m, n = map(int, input().split())
+    print(lattice_paths(m,n)%(10**9+7))
