@@ -13,9 +13,8 @@ def lattice_paths(m,n):
     return math.factorial(m + n) // (math.factorial(m) * math.factorial(n))
 
 
-t= int(input())
-
 if __name__ == "__main__":
+    t= int(input())
     for _ in range(t):
         m, n = map(int, input().split())
         print(lattice_paths(m,n)%(10**9+7)) #to print answer in modulo 10^9+7
