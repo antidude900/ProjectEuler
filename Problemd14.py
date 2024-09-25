@@ -30,6 +30,32 @@ def length_of_sequence_all(max_val):
     for num in range(2, max_val + 1): 
         length = length_of_sequence_nth(num, lengths) #finding length of number from 2 to max_val(0 and 1 are already predetermined]
         lengths.append(length) #append the length of the respective num
+        
+        """
+        To explain the below code, lets first take an example:
+        Lets us write the first 7 values(0 to 6) of longest_len_nums array and then explain it:
+        longest_len_nums = [0, 1, 2, 3, 3, 3, 6]
+        
+        Collatz sequence is only possible for natural numbers. So using 0 only to make index correspond to the respective number
+        
+        Here 1 has collatz sequence 1. So its length is 1. 
+        As among the numbers upto 1, the one with the longest length is 1. So longest_len_nums[1] is set to 1 in default.
+        
+        Here 2 has collatz sequence 2→1. So its length is 2.
+        As among the numbers upto 2, the one with the longest number is 2. So longest len_num[2] is set to 2
+
+        Here 3 has collatz sequence 3→10→5→16→8→4→2→1. So its length is 8.
+        As among the numbers upto 3, the one with the longest number is 3. So longest len_num[3] is set to 3.
+
+        Here 4 has collatz sequence 4→2→1. So its length is 3.
+        As among the numbers upto 4, the one with the longest number is 3. So longest len_num[4] is set to 3.
+
+        Here 5 has collatz sequence 5→16→8→4→2→1. So its length is 6.
+        As among the numbers upto 5, the one with the longest number is 3. So longest len_num[5] is set to 3.
+
+        Here 6 has collatz sequence 6→3→10→5→16→8→4→2→1. So its length is 9.
+        As among the numbers upto 6, the one with the longest number is 6. So longest len_num[5] is set to 6.       
+        """
 
         #the below code does the same thing as explained aboved
         if length >= max_length: 
