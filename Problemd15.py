@@ -1,6 +1,8 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler015/problem
+"""
+
 import math
-
-
 def lattice_paths(m,n):
     """for this can use the combination formula : 
     C(m + n, m) = (m + n)! / (m! * n!)
@@ -13,6 +15,7 @@ def lattice_paths(m,n):
 
 t= int(input())
 
-for _ in range(t):
-    m, n = map(int, input().split())
-    print(lattice_paths(m,n)%(10**9+7)) #to get answer in modulo 10^9+7
+if __name__ == "__main__":
+    for _ in range(t):
+        m, n = map(int, input().split())
+        print(lattice_paths(m,n)%(10**9+7)) #to get answer in modulo 10^9+7
