@@ -76,3 +76,8 @@ if __name__ == "__main__":
         n = int(input())
         print(num_to_words(n).strip()) #we have spaces ahead of all strings in the dictinoary. so they string which comes at first will also have spaces ahead
 									   #and when comparing to the answer, it wont match. so removing the leading and trailing whitespaces
+
+"""
+for doing the original question of project euler, 
+just iterate through the string we got after conversion and count the number of letters 
+"""
