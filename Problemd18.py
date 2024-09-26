@@ -78,9 +78,6 @@ for _ in range(int(input())):
     print(result)
 
 
-
-
-
 """
 #If given traingle in this form:
 
