@@ -66,7 +66,6 @@ def length_of_sequence_all(max_val):
             max_length = length
             longest_len_nums[num] = num
             longest_length_num = num
-
        
         longest_len_nums[num] = longest_length_num
         
@@ -88,4 +87,9 @@ if __name__ == "__main__":
     # Print the result for each test case
     for num in test_cases:
         print(longest_len_nums[num])
+
+"""
+done simple and v2 version both in same file
+for simple mode, we dont have to make longest_len_nums array like in line 31 and return only the longest_length_num in line 73 
+"""
 
