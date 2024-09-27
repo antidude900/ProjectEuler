@@ -1,5 +1,10 @@
 """
-Found this solution on HackerRank Discussion and it's  very interesting. So using the same solution
+https://www.hackerrank.com/contests/projecteuler/challenges/euler019/problem
+"""
+
+
+"""
+Found this solution on HackerRank Discussion and it's very interesting. So using the same solution:
 
 Concept: Every 400 years, the calendar cycle repeats. Therefore, by finding
 all sunday-the-firsts (STFs) in any range of 400 years, one can deduce the
