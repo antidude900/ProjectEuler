@@ -100,17 +100,17 @@ for y in range(400):
 lookup = lookup*4
 
 
-
-for i in range(int(input())):
-    y0, m0, d0 = [int(n) for n in input().split(' ')]
-    y1, m1, d1 = [int(n) for n in input().split(' ')]
-    ## if the start date is after the first of the month, we can just start on
-    ## the first of the following month
-    if d0 > 1:
-        m0 += 1
-        if m0 == 13:
-            m0 = 1
-            y0 += 1
-    ## find the result
-    print(span_count(y0, m0, y1, m1))
-
+if __name__ == "__main__":
+    t = int(input())
+    for _ in range(t):
+        y0, m0, d0 = [int(n) for n in input().split()]
+        y1, m1, d1 = [int(n) for n in input().split()]
+        ## if the start date is after the first of the month, we can just start on
+        ## the first of the following month
+        if d0 > 1:
+            m0 += 1
+            if m0 == 13:
+                m0 = 1
+                y0 += 1
+        ## find the result
+        print(span_count(y0, m0, y1, m1))
