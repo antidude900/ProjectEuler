@@ -99,7 +99,8 @@ for y in range(400):
 ## the range of the lookup list
 lookup = lookup*4
 
-## parse inputs
+
+
 for i in range(int(input())):
     y0, m0, d0 = [int(n) for n in input().split(' ')]
     y1, m1, d1 = [int(n) for n in input().split(' ')]
