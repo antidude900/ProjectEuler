@@ -1,13 +1,18 @@
-product = 1
-sum = 0
-num = 100
 
-while (num!=1):#finding 100 factorial
-	product *= num
-	num-=1
+import math
 
-tmp = str(product)#changing into string to iterate
+def sum_factorial(n):
+    factorial = str(math.factorial(n))
+    sum  = 0
+    for i in range(len(factorial)):
+        sum+= int(factorial[i])
+    return sum
+        
 
-for i in tmp:#adding all the digits
-	sum+=int(i)
-print(sum)
+
+if __name__ == "__main__":
+    t=int(input())
+    
+    for _ in range(t):
+        N = int(input())
+        print(sum_factorial(N))
