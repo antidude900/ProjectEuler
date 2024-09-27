@@ -1,7 +1,7 @@
 """
 https://www.hackerrank.com/contests/projecteuler/challenges/euler020/problem
 """
-
+#Very easy and straightforward question! Needs no explanation
 
 import math
 
