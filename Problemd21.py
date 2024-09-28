@@ -15,11 +15,11 @@ def sum_of_divisors(n):
     return total
 
 def sum_of_amicable_numbers(limit):
-    total = 0
-    for x in range(limit + 1):
+    total = []
+    for a in range(limit + 1):
         b = sum_of_divisors(a)
         if a == sum_of_divisors(b) and a != b:
-            total+=a
+            total.append(a)
     return total
 
 if __name__ == "__main__":
@@ -29,11 +29,11 @@ if __name__ == "__main__":
     for _ in range(t):
         inputs.append(int(input()))
     
-    max_limit = max(inputs)  # Get the maximum limit from the inputs
+    max_limit = max(inputs)  
     
-    # Calculate amicable numbers up to the maximum limit
-    amicable_numbers = sum_of_amicable_numbers(max_limit)
+    # Finding amicable numbers upto max_limit
+    amicable_numbers = sum_of_amicable_numbers(max_limit) 
 
-    # For each input, calculate the sum of amicable numbers
+    # For each input, calculate the sum of amicable numbers upto the respective limit
     for n in inputs:
         print(sum(x for x in amicable_numbers if x <= n))
