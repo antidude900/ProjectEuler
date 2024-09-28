@@ -1,3 +1,8 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler022/problem
+"""
+
+
 if __name__ == "__main__":
     # for mapping alphabet with their position value [here position valus is given by index but as index starts from 0, need to add 1 to index value to get true positional value]
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
