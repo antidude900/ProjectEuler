@@ -22,7 +22,8 @@ This repository contains Python solutions to various Project Euler problems. Eac
 
 ## Structure
 
-Each solution is saved as a separate Python file, named according to the problem number (e.g., `Problem1.py` for Problem 1). However when saving two digit numbered problem, it gets grouped up with the single digit problem which has same digit as its first digit. To prevent this, the name is a little modified (e.g., `Problemd12.py` for Problem 12). The code is well-commented, explaining the mathematical theory, thought process, and example inputs. Also some questions have v2 version too (e.g., `Problemd12_v2.py` for Problem 12). Both are the same algorithm and have same speed but the v2 version is made to make the alogirthm optimized for multiple test cases (this problem is discussed more in `Problemd10_v2.py`). 
+Each solution is saved as a separate Python file, named according to the problem number (e.g., `Problem1.py` for Problem 1). However when saving two digit numbered problem, it gets grouped up with the single digit problem which has same digit as its first digit. To prevent this, the name is a little modified (e.g., `Problemd12.py` for Problem 12). The code is well-commented, explaining the mathematical theory, thought process, and example inputs. Also some questions have v2 version too (e.g., `Problemd12_v2.py` for Problem 12). Both are the same algorithm and have same speed but the v2 version is made to make the alogirthm optimized for multiple test cases (this problem is discussed more in `Problemd10_v2.py`).
+[Note: v2 version seperate file is only made for `Problemd10.py` and `Problemd12.py`. To know why, read the note in `Problemd12_v2.py`]
 
 
 ## Project Euler
