@@ -1,4 +1,6 @@
-
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler021/problem
+"""
 def sum_of_divisors(n):
     total = 1
     
