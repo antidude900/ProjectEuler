@@ -2,6 +2,14 @@
 Same as Problem12.py, just optimized it for multiple test cases
 """
 
+"""
+Note: 
+As you have got familiar with the questions with multiple test cases where the result from the previous test case can be used in others too,
+it is clear that the different is those single case and multiple case solution was that we used a array to store the results which could be used by all test cases
+So from now on, I will only be writing multiple case solutions if exists
+and to change it into single case solution, just remove the shared array and directly give the required result
+"""
+
 def count_divisors(n):
     i = 2;
     p = 1
