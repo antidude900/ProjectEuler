@@ -88,8 +88,5 @@ if __name__ == "__main__":
     for num in test_cases:
         print(longest_len_nums[num])
 
-"""
-done simple and v2 version both in same file
-for simple mode, we dont have to make longest_len_nums array like in line 31 and return only the longest_length_num in line 73 
-"""
+
 
