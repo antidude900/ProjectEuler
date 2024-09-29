@@ -1,5 +1,5 @@
 """
-https://www.hackerrank.com/contests/projecteuler/challenges/euler023/problem?isFullScreen=true
+https://www.hackerrank.com/contests/projecteuler/challenges/euler023/problem
 """
 
 
