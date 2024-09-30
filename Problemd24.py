@@ -1,3 +1,6 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler024/problem
+"""
 import math
 
 def nth_lexicographic_permutation(n):
