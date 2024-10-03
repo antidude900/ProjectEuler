@@ -1,3 +1,7 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler026/problem
+"""
+
 
 """
 length of recurring cycle is simply the no of digits of the number which is recurring
