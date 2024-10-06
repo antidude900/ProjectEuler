@@ -36,6 +36,6 @@ def find_best_coefficients(limit):
 
 if __name__=="__main__":
     limit = int(input())
-    a,b=find_best_coefficients(int(input()))
+    a,b=find_best_coefficients(limit)
     print(a,b)
 
