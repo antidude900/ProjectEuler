@@ -1,3 +1,7 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler027/problem
+"""
+
 import math
 
 #Checking whether the result generated is prime or not
