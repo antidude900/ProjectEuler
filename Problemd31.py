@@ -6,6 +6,10 @@ https://www.hackerrank.com/contests/projecteuler/challenges/euler031/problem
 Explanation Tommorow
 """
 
+"""
+Also talk about minimum coins problem
+"""
+
 def total_no_of_ways(n):
     results=[0]*(max(n)+1)
     results[0]=1
