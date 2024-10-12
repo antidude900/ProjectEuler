@@ -3,7 +3,7 @@ https://www.hackerrank.com/contests/projecteuler/challenges/euler031/problem
 """
 
 """
-Explanation Tommorow
+Explanation ~~Tommorow~~ Day After Tommorow (Had to shift a day due to festival today)
 """
 
 """
