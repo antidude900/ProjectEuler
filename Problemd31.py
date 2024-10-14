@@ -3,7 +3,7 @@ https://www.hackerrank.com/contests/projecteuler/challenges/euler031/problem
 """
 
 """
-Explanation Tomorrow for sure
+Explanation Tomorrow for sure, I promise
 """
 
 """
