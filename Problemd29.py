@@ -57,13 +57,37 @@ def distinct_terms(N):
    			As we now have to find the powers of a certain power, the power itself is the base say new_base and now to find its power,
 			we start iterating after (N//exponent)th term of new_base(The numbers upto (N/exponent)th term are overlapped and already contained by the parent base as explained in line 25)
    			to get the non-overlapped terms of the new_base and thus we find the total distinct terms of the new_base as well
+
+      		Now lets talk abou the actual line of code for getting the extra list i.e in line 50.
+
+  			This code rather than recording the powers of the new_base, records the exponents which gives the powers of the new_base when raised to the parent/previous base
+	 		For eg:
+			For base = 2 and new_base = 4, 
+   			we get extra=[4096, 16384, 65536, 262144, 1048576] from the commented extra list code.
+	  		we get extra=[12, 14, 16, 18, 20] from the actual used extra list code. Here, 2^12=4096, 2^14=16384, 2^16=65536 and so on.
+
+  			Now the question comes: Why did we used the extra list code storing the exponents rather the powers itself.
+	 		Well, both of the 2 ways worked well for 10 test cases. But for the other 10 test cases, only the extra list code storing the exponents passed.
+			It might be because when we store the powers, the numbers are very very very big to compute and operate as N(max)=10^5 so the maximum power is (10^5)^(10^5)
+   			which makes the performance slow but storing exponents, the numbers become very less comparatively as N(max)=10^5 so maximum exponent will also be only 10^5
+	  		making it easier to compute and operate the numbers.
    			"""
 
-            extras.update(extra)
+            extras.update(extra) # storing the extra in the extras array because the extra for the another power is also to be calculated.
+								 # for eg: For N=10 and base=2, we have to calculate extra for 4(2^2) and 8(2^3) as well.
            
-            exponent += 1
+            exponent += 1	# incrementing the exponent to calculate the extra of another power as well(8 as per the above example)
 
-        count += len(extras) + N - 1
+        count += len(extras) + N - 1 
+		"""
+  		N-1 gives the total distinct terms of the parent_base. len(extras) will give the total distinct terms of its powers.
+		For eg: For N=10 and base=2, 2 will have 10-1 i.e 9 distict terms and will have 10 extra i.e 5 distict terms from 4 and 7 distinct terms from 8 however,
+  		4096(2^12) and 262144(2^18) are present it both so lets say 5 distinct terms from 4 and 5 distinct terms from 8
+		(the removing of those duplicates between them will be handled when adding both the extra of 4 and 8 to the extras set.
+
+  		Then simlilary, we find the total no of distinct terms of 3,4,5,6,7,8,9,...,N and add each count to the count variable giving us,
+		the total no of distinct terms genererated by a^b where 2<=a<=N and 2<=b<=N.
+		"""
 
     return count
     
