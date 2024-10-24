@@ -1,3 +1,6 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler032/problem
+"""
 
 #Here a and b represents the two numbers multiplying to give product
 def is_pandigital(a, b, product, N):
@@ -10,8 +13,6 @@ def is_pandigital(a, b, product, N):
     Other ways to compare could be done by: return sorted(digits) == [str(i) for i in range(1, N + 1)] or,
 											return ''.join(sorted(digits)) == ''.join(map(str, range(1, N+1)))
    	"""
-                                
-    
 
 def pandigital_products_sum(N):
     products = set()
