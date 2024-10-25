@@ -39,6 +39,7 @@ def pandigital_products_sum(N):
 
     return sum(products) #returning the sum of the set to find the sum of all unique prouduct satisfying the pandigital property with its multiplicand and multiplier
 
-N = int(input())
-print(pandigital_products_sum(N))
+if __name__ == "__main__":
+	N = int(input())
+	print(pandigital_products_sum(N))
 
