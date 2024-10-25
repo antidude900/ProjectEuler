@@ -1,3 +1,7 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler034/problem
+"""
+
 from math import factorial
 
 if __name__ =="__main__":
