@@ -19,7 +19,8 @@ def compute_fibonacci_terms(max_n): #computing all the nth terms of all cases to
     
     return fib_digits
 
-def main():
+
+if __name__ == "__main__":
     t = int(input())
     inputs = [int(input()) for _ in range(t)]
     
@@ -28,6 +29,3 @@ def main():
     
     for n in inputs:
         print(fib_digits[n])
-
-if __name__ == "__main__":
-    main()
