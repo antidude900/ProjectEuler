@@ -45,8 +45,8 @@ def nth_lexicographic_permutation(n):
     
     return ''.join(result) #the list is converted to string 
 
-
-T = int(input()) 
-for _ in range(T):
-    N = int(input())
-    print(nth_lexicographic_permutation(N))
+if __name__ == "__main__":
+    T = int(input()) 
+    for _ in range(T):
+        N = int(input())
+        print(nth_lexicographic_permutation(N))
