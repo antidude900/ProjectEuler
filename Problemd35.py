@@ -1,3 +1,6 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler035/problem
+"""
 
 """
 The test cases for this problem are poorly designed. 
@@ -34,6 +37,6 @@ def circular_primes_sum(limit):
             circular_primes.append(num)
     return sum(circular_primes)
 
-
-limit = int(input())
-print(circular_primes_sum(limit))
+if __name__ == "__main__":
+	limit = int(input())
+	print(circular_primes_sum(limit))
