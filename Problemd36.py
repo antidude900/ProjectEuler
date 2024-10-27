@@ -1,3 +1,6 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler036/problem
+"""
 
 """
 For converting a natural number i.e base 10 to any other base say K, we have to divide the number by K until 0. 
