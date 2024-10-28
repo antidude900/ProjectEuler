@@ -1,6 +1,4 @@
-def isPrime(n):
-    num = int(n)
-    
+def isPrime(num): 
     if num<2:
         return False
         
@@ -13,13 +11,12 @@ def isPrime(n):
 def sum_truncatable(N):
     total_sum=0
     for num in range(11,N):
-        str_num = str(num)
+        str_num = str(num) #converting to string so that we can slice it 
        
-        
-        if all(isPrime(str_num[i:]) for i in range(len(str_num))):
-            if all(isPrime(str_num[:j]) for j in range(len(str_num),0,-1)):
+        if all(isPrime(int(str_num[i:])) for i in range(len(str_num))): #slicing it from left to right and checking if all slices are prime or not
+            if all(isPrime(int(str_num[:j])) for j in range(len(str_num),0,-1)): #slicing from right to left and checking if all slices are prime or not
             
-                total_sum+=num
+                total_sum+=num #if both the above condition satisfy, then add the number to the total_sum
         
     return total_sum
 
