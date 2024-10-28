@@ -17,7 +17,7 @@ def is_prime(n):
 	Can also use sieve_of_eratosthenes to find primes but this normal way also passed all test cases so used this.
  	For this sieve_of_eratosthenes, we find primes upto 10**len(str(limit))
     """
-    #dont need to if n<2: return False statement because we start checking primes through 2 in circular_primes_sum() functiton
+    #dont need 'if n<2: return False' statement because we start checking primes through 2 in circular_primes_sum() functiton
     for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
             return False
