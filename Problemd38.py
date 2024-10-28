@@ -1,7 +1,10 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler038/problem
+"""
 
-#Here N is the limit of multipliers M. K is the range/length of pandigital i.e 1-K pandigital number.
+#Here N is the limit of multipliers M and K is the range/length of pandigital number i.e 1-K pandigital number.
 def find_numbers(N, K):
-    for M in range(2, N + 1): #Looking for Multipliers from 2 to N. Not from 1, because in ouput example, 1 was not given though Multiplier 1 will always give pandigital
+    for M in range(2, N + 1): #Looking for multipliers from 2 to N. Not from 1, because in ouput example, 1 was not given though multiplier 1 will always give pandigital
         total_num = "" 
         digit = 1
 
