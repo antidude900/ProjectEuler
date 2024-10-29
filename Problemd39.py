@@ -1,3 +1,6 @@
+"""
+https://www.hackerrank.com/contests/projecteuler/challenges/euler039/problem
+"""
 
 """
 To first understand the below algorithm, you should know about Euclid's formula.
