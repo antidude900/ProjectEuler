@@ -61,4 +61,9 @@ for perimeter in range(1, 5000 * 1000 + 1):
     else: #but if that next perimeter has less no of ways than the current perimeter with max no of ways
         max_perimeter_upto[perimeter] = max_perimeter #then the max no of ways upto that next perimeter is still of the previous one
 
+if __name__ == "__main__":
+    T = int(input())
+    for _ in range(T):
+        N = int(input())
+        print(max_perimeter_upto(N))
 
