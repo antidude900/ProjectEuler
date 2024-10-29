@@ -38,12 +38,12 @@ for m in range(1, 1581): #as perimeter should be less or equal to 5000000, the 2
             perimiter_ways[p] += 1
             i = 2
             while i * p <= 5000000: 
-               """
-               the multiples of the perimeter p subsets the no of ways of p i.e if p is made from (a,b,c), 2*p will be made from(2*a,2*b,2*c)
-               so increase the no of ways of 2p as well for the solution (2*a,2*b,2*c) when we find solution of p as (a,b,c). 
-               Also because of the m and n nature of coprime and opposite polarity, it avoids genertaing m and n which generates same solution (2*a,2*b,2*c) for 2p
-               Thus there is no risk of duplicates
-               """
+            	"""
+               	the multiples of the perimeter p subsets the no of ways of p i.e if p is made from (a,b,c), 2*p will be made from(2*a,2*b,2*c)
+               	so increase the no of ways of 2p as well for the solution (2*a,2*b,2*c) when we find solution of p as (a,b,c). 
+               	Also because of the m and n nature of coprime and opposite polarity, it avoids genertaing m and n which generates same solution (2*a,2*b,2*c) for 2p
+               	Thus there is no risk of duplicates
+               	"""
                 primiter[i * p] += 1
                 i += 1
 
