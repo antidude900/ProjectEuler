@@ -1,4 +1,8 @@
 """
+https://www.hackerrank.com/contests/projecteuler/challenges/euler040/problem
+"""
+
+"""
 Let's talk about the sequence given before diving in the solution:
 
 The given sequence of number is: 0.123456789101112131415161718192021...
